@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101827">
+<title>Hackathon — 10 đề tài dành cho sinh viên Cao đẳng CNTT</title>
+<style>
+:root{--bg:#0b1020;--panel:#131c2e;--panel2:#18243a;--text:#f3f6fc;--muted:#a8b5ca;--line:#2b3a52;--accent:#65e0c0;--blue:#8bb8ff;--orange:#ffc078;--pink:#ff9bc2;--radius:22px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:radial-gradient(ellipse at 10% 0%,#19294b 0,transparent 42%),var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit}.wrap{width:min(1180px,calc(100% - 36px));margin:auto}.topbar{position:sticky;top:0;z-index:10;background:#0b1020eF;border-bottom:1px solid var(--line);backdrop-filter:blur(16px)}.nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{font-weight:900;letter-spacing:.08em}.brand span{color:var(--accent)}.navlinks{display:flex;gap:18px;flex-wrap:wrap}.navlinks a{text-decoration:none;color:var(--muted);font-size:.9rem}.navlinks a:hover{color:var(--accent)}.hero{padding:78px 0 54px}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--accent);font-size:.8rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}.eyebrow:before{content:"";width:24px;height:2px;background:currentColor}.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:36px;align-items:center}.hero h1{font-size:clamp(2.6rem,6vw,5.3rem);line-height:1.02;letter-spacing:-.055em;margin:18px 0}.hero h1 em{font-style:normal;color:var(--accent)}.lead{font-size:1.15rem;color:var(--muted);max-width:690px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:999px;padding:12px 19px;text-decoration:none;font-weight:750;background:var(--panel);color:var(--text);cursor:pointer}.btn.primary{background:var(--accent);border-color:var(--accent);color:#08221d}.hero-art{border:1px solid #31415e;background:linear-gradient(145deg,#1b2a46,#111a2b);border-radius:30px;padding:25px;min-height:310px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 24px 80px #0004}.orbit{display:grid;place-items:center;height:180px;position:relative}.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid #5f83a8;border-radius:50%;width:175px;height:175px}.orbit:after{width:125px;height:125px;border-style:dashed}.core{width:85px;height:85px;border-radius:24px;background:var(--accent);color:#08221d;display:grid;place-items:center;font-size:2rem;font-weight:900;transform:rotate(-8deg);z-index:1}.float{position:absolute;background:#253651;border:1px solid #49607e;padding:7px 11px;border-radius:12px;font-weight:800;font-size:.82rem}.f1{top:4px;left:10%}.f2{right:2%;top:42%}.f3{bottom:4px;left:12%}.art-caption{color:var(--muted);font-size:.92rem}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:38px}.stat{border-top:1px solid var(--line);padding-top:14px}.stat strong{display:block;font-size:1.6rem}.stat span{color:var(--muted);font-size:.88rem}.section{padding:58px 0}.section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:24px}.section h2{font-size:clamp(1.8rem,4vw,3rem);letter-spacing:-.04em;line-height:1.12;margin:8px 0}.section-head p{color:var(--muted);max-width:540px;margin:0}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0}.filter{border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;padding:8px 13px;cursor:pointer;font:inherit;font-size:.88rem}.filter.active,.filter:hover{background:var(--accent);color:#08221d;border-color:var(--accent)}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.project{border:1px solid var(--line);border-radius:var(--radius);padding:23px;background:linear-gradient(145deg,#162238,#101827);transition:transform .2s,border-color .2s;min-width:0}.project:hover{transform:translateY(-3px);border-color:#5c8e9a}.project-top{display:flex;justify-content:space-between;align-items:start;gap:12px}.num{font-size:.82rem;font-weight:900;letter-spacing:.12em;color:var(--accent)}.emoji{font-size:2rem;line-height:1}.tag{display:inline-block;border:1px solid #35554f;background:#173a36;color:var(--accent);padding:4px 9px;border-radius:999px;font-size:.76rem;font-weight:750;margin:12px 0}.project h3{font-size:1.42rem;line-height:1.2;margin:3px 0 4px}.subtitle{color:var(--blue);font-weight:650;margin:0 0 14px}.project p{margin:9px 0;color:var(--muted)}.project p b{color:var(--text)}.project .story{color:#d9e2f0}.challenge{margin-top:15px;padding:13px 14px;background:#0b1322;border-radius:13px;border-left:3px solid var(--orange);color:#d8e1ef;font-size:.93rem}.deliver{margin-top:13px;font-size:.9rem;color:var(--muted)}.deliver strong{color:var(--accent)}.no-results{display:none;color:var(--muted);padding:25px}.split{display:grid;grid-template-columns:1fr 1fr;gap:18px}.feature{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px}.feature h3{margin:8px 0}.feature p,.feature li{color:var(--muted)}.feature ul{padding-left:20px}.rank{display:inline-grid;place-items:center;width:35px;height:35px;border-radius:11px;background:#263a50;color:var(--accent);font-weight:900;margin-right:8px}.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.timeitem{padding:19px;border:1px solid var(--line);border-radius:18px;background:var(--panel)}.timeitem .time{color:var(--accent);font-weight:900;font-size:.86rem}.timeitem h3{margin:8px 0}.timeitem p{margin:0;color:var(--muted);font-size:.93rem}.rubric{width:100%;border-collapse:collapse;border:1px solid var(--line);border-radius:15px;overflow:hidden}.rubric th,.rubric td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line)}.rubric th{background:#1b2940;color:var(--accent)}.rubric td:last-child,.rubric th:last-child{text-align:right;font-weight:850;white-space:nowrap}.rubric tr:last-child td{font-weight:900;color:var(--accent);border-bottom:0}.note{border:1px solid #3c645f;background:#122a2b;border-radius:16px;padding:17px 20px;color:#dceee9;margin-top:18px}.footer{padding:35px 0 50px;border-top:1px solid var(--line);color:var(--muted)}.footer strong{color:var(--text)}.small{font-size:.9rem;color:var(--muted)}.backtop{position:fixed;right:20px;bottom:20px;background:var(--accent);color:#08221d;border:0;border-radius:50%;width:46px;height:46px;font-size:1.2rem;font-weight:900;cursor:pointer;box-shadow:0 8px 25px #0005}
+@media(max-width:760px){.nav{padding:12px 0;align-items:flex-start;flex-direction:column}.navlinks{gap:12px}.hero{padding-top:48px}.hero-grid,.split{grid-template-columns:1fr}.hero-art{min-height:260px}.cards{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:12px}.timeline{grid-template-columns:1fr 1fr}.stats{gap:8px}.stat strong{font-size:1.3rem}.rubric th,.rubric td{padding:11px 9px;font-size:.9rem}}@media(max-width:430px){.wrap{width:min(100% - 24px,1180px)}.timeline{grid-template-columns:1fr}.hero h1{font-size:2.7rem}.project{padding:18px}.navlinks a{font-size:.82rem}}
+@media print{body{background:#fff;color:#111}.topbar,.hero-actions,.filters,.backtop{display:none!important}.hero{padding:20px 0}.hero-art,.project,.feature,.timeitem{background:#fff;color:#111;border-color:#bbb;break-inside:avoid}.lead,.project p,.feature p,.feature li,.timeitem p,.small,.art-caption{color:#444}.section{padding:25px 0}.cards{grid-template-columns:1fr 1fr}.project .challenge{background:#f5f5f5;color:#111}.rubric th{background:#eee;color:#111}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap nav">
+    <a class="brand" href="#home" style="text-decoration:none">HACK<span>ATHON</span> / CNTT</a>
+    <nav class="navlinks" aria-label="Điều hướng chính">
+      <a href="#de-tai">10 đề tài</a><a href="#goi-y">Chọn đề tài</a><a href="#lich-thi">Lịch thi</a><a href="#cham-diem">Thang điểm</a>
+    </nav>
+  </div>
+</header>
+<main id="home">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Ý tưởng cuộc thi dành cho sinh viên</div>
+      <h1>Code nhanh chưa đủ.<br><em>Hãy tạo sản phẩm.</em></h1>
+      <p class="lead">10 đề tài Hackathon vui nhộn, gắn với vấn đề đời sống và có cơ hội ứng dụng AI. Sinh viên cùng phân tích yêu cầu, thiết kế dữ liệu, lập trình, kiểm thử và bảo vệ quyết định kỹ thuật trong thời gian giới hạn.</p>
+      <div class="hero-actions"><a class="btn primary" href="#de-tai">Khám phá 10 đề tài ↓</a><a class="btn" href="#lich-thi">Xem lịch thi 8 giờ</a></div>
+      <div class="stats"><div class="stat"><strong>10</strong><span>ý tưởng thực tế</span></div><div class="stat"><strong>8 giờ</strong><span>lịch thi mẫu</span></div><div class="stat"><strong>100 điểm</strong><span>thang đánh giá</span></div></div>
+    </div>
+    <aside class="hero-art" aria-label="Minh họa quy trình Hackathon">
+      <div class="orbit"><span class="float f1">THINK</span><span class="float f2">BUILD</span><span class="float f3">TEST</span><div class="core">&lt;/&gt;</div></div>
+      <div><div class="eyebrow">Think · Build · Test · Present</div><p class="art-caption">Từ một vấn đề đời thường đến sản phẩm chạy được — và một đội nhóm biết giải thích vì sao mình xây dựng nó như vậy.</p></div>
+    </aside>
+  </div>
+</section>
+
+<section class="section" id="de-tai">
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">01 / Danh mục đề tài</div><h2>Chọn bài toán. Xây giải pháp.</h2></div><p>Mỗi đề tài đều có bối cảnh, nhiệm vụ, cơ hội dùng AI và một thử thách kỹ thuật để ban giám khảo kiểm tra năng lực thực chiến.</p></div>
+    <div class="filters" role="group" aria-label="Lọc đề tài theo nhóm">
+      <button class="filter active" data-filter="all">Tất cả (10)</button><button class="filter" data-filter="campus">Đời sống campus</button><button class="filter" data-filter="business">Quản lý kinh doanh</button><button class="filter" data-filter="learning">Học tập & công việc</button><button class="filter" data-filter="tech">Kỹ thuật & sự kiện</button>
+    </div>
+    <div class="cards" id="projectCards">
+      <article class="project" data-category="campus"><div class="project-top"><span class="num">ĐỀ TÀI 01</span><span class="emoji">🍜</span></div><span class="tag">AI gợi ý món ăn</span><h3>Cứu Đói Campus</h3><p class="subtitle">Căn tin không còn cảnh xếp hàng</p><p class="story"><b>Bối cảnh:</b> Giờ ra chơi chỉ có 15 phút. Đến lượt mua thì hết món, hết tiền hoặc hết cả kiên nhẫn.</p><p><b>Nhiệm vụ:</b> Đặt món, quản lý thực đơn và đơn hàng, mô phỏng thanh toán, theo dõi trạng thái.</p><p><b>AI có thể làm:</b> Gợi ý món theo ngân sách, sở thích và thời gian chờ; phân tích món bán chạy.</p><div class="challenge"><b>Thử thách:</b> 100 sinh viên đặt cùng lúc — làm sao không bán vượt số lượng tồn kho?</div><div class="deliver"><strong>Bàn giao:</strong> Website đặt món, trang quản trị, dashboard và chatbot.</div></article>
+      <article class="project" data-category="learning"><div class="project-top"><span class="num">ĐỀ TÀI 02</span><span class="emoji">🧑‍🤝‍🧑</span></div><span class="tag">AI hỗ trợ quản lý dự án</span><h3>Teamwork SOS</h3><p class="subtitle">Truy tìm thành viên mất tích</p><p class="story"><b>Bối cảnh:</b> Nhóm 5 người: một người làm slide, một người làm báo cáo, một người mất tích và hai người hỏi “làm tới đâu rồi?”.</p><p><b>Nhiệm vụ:</b> Chia việc, giao deadline, theo dõi tiến độ, lưu minh chứng đóng góp và quản lý thành viên.</p><p><b>AI có thể làm:</b> Chia nhỏ yêu cầu, đề xuất người phụ trách theo kỹ năng/khối lượng và cảnh báo trễ hạn.</p><div class="challenge"><b>Thử thách:</b> Phát hiện quá tải nhưng không kết luận ai lười chỉ vì ít thao tác trên hệ thống.</div><div class="deliver"><strong>Bàn giao:</strong> Kanban, quản lý thành viên, báo cáo tiến độ và trợ lý lập kế hoạch.</div></article>
+      <article class="project" data-category="campus"><div class="project-top"><span class="num">ĐỀ TÀI 03</span><span class="emoji">💸</span></div><span class="tag">AI phân tích chi tiêu</span><h3>Ví Tiền Bốc Hơi</h3><p class="subtitle">Điều tra vụ án cuối tháng</p><p class="story"><b>Bối cảnh:</b> Đầu tháng ăn uống sang chảnh, giữa tháng mì gói, cuối tháng hỏi bạn “còn 20 nghìn cho mượn không?”.</p><p><b>Nhiệm vụ:</b> Ghi thu chi, phân loại giao dịch, lập ngân sách, thống kê ngày/tháng và nhắc vượt hạn mức.</p><p><b>AI có thể làm:</b> Phân loại nội dung chi tiêu, giải thích xu hướng và đề xuất ngân sách.</p><div class="challenge"><b>Thử thách:</b> Tìm khoản chi bất thường và dự báo nguy cơ vượt ngân sách từ dữ liệu mẫu.</div><div class="deliver"><strong>Bàn giao:</strong> Ứng dụng tài chính cá nhân, biểu đồ và trợ lý dùng dữ liệu giả lập.</div></article>
+      <article class="project" data-category="campus"><div class="project-top"><span class="num">ĐỀ TÀI 04</span><span class="emoji">🕵️</span></div><span class="tag">AI tìm kiếm thông minh</span><h3>Sherlock Campus</h3><p class="subtitle">Thám tử tìm đồ thất lạc</p><p class="story"><b>Bối cảnh:</b> Mất bình nước, áo khoác hay thẻ sinh viên; người đăng tin lại không nhớ rõ món đồ trông thế nào.</p><p><b>Nhiệm vụ:</b> Đăng tin mất/nhặt được, tải ảnh, tìm kiếm, xác minh và nhận lại đồ.</p><p><b>AI có thể làm:</b> So sánh mô tả và hình ảnh để gợi ý tin có khả năng trùng khớp; tìm bằng câu hỏi tự nhiên.</p><div class="challenge"><b>Thử thách:</b> Ghép tin thiếu thông tin, tránh nhận nhầm đồ và bảo vệ dữ liệu cá nhân.</div><div class="deliver"><strong>Bàn giao:</strong> Website tìm đồ, tìm kiếm ảnh/mô tả và quy trình xác minh.</div></article>
+      <article class="project" data-category="learning"><div class="project-top"><span class="num">ĐỀ TÀI 05</span><span class="emoji">📚</span></div><span class="tag">AI gia sư</span><h3>Cứu Tôi Trước Giờ Thi</h3><p class="subtitle">Trợ lý học tập 11 giờ 59</p><p class="story"><b>Bối cảnh:</b> Mai thi nhưng hôm nay mới mở tài liệu. Cần ôn đúng trọng tâm thay vì đọc 200 trang giáo trình.</p><p><b>Nhiệm vụ:</b> Quản lý môn học, tài liệu, lịch thi, ngân hàng câu hỏi và kết quả luyện tập.</p><p><b>AI có thể làm:</b> Tóm tắt tài liệu giảng viên cung cấp, tạo câu hỏi, giải thích đáp án và lập kế hoạch ôn.</p><div class="challenge"><b>Thử thách:</b> AI phải bám sát tài liệu nguồn và nói rõ khi tài liệu không có câu trả lời.</div><div class="deliver"><strong>Bàn giao:</strong> Website học tập, bài kiểm tra trực tuyến, thống kê và chatbot gia sư.</div></article>
+      <article class="project" data-category="campus"><div class="project-top"><span class="num">ĐỀ TÀI 06</span><span class="emoji">🗂️</span></div><span class="tag">AI hướng dẫn thủ tục</span><h3>Một Cửa Đừng Một Đống</h3><p class="subtitle">Cứu tinh thủ tục sinh viên</p><p class="story"><b>Bối cảnh:</b> Cần xin giấy xác nhận nhưng không biết nộp ở đâu, cần giấy gì và bao lâu mới nhận.</p><p><b>Nhiệm vụ:</b> Cổng yêu cầu dịch vụ: xin giấy xác nhận, mượn phòng, báo hỏng thiết bị và theo dõi xử lý.</p><p><b>AI có thể làm:</b> Hỏi đáp theo quy định nhà trường, hướng dẫn hồ sơ thiếu và phân loại yêu cầu.</p><div class="challenge"><b>Thử thách:</b> Phân quyền sinh viên/cán bộ, chuyển đúng bộ phận và không bịa quy định.</div><div class="deliver"><strong>Bàn giao:</strong> Cổng dịch vụ, dashboard, thông báo trạng thái và chatbot.</div></article>
+      <article class="project" data-category="business"><div class="project-top"><span class="num">ĐỀ TÀI 07</span><span class="emoji">☕</span></div><span class="tag">AI dự báo bán hàng</span><h3>Chủ Quán Bất Ổn</h3><p class="subtitle">AI quản lý quán cà phê</p><p class="story"><b>Bối cảnh:</b> Quán đông khách nhưng cuối tháng không rõ lời/lỗ; nhập nhiều thì nguyên liệu hết hạn, nhập ít thì khách gọi là hết món.</p><p><b>Nhiệm vụ:</b> Quản lý sản phẩm, nguyên liệu, đơn hàng, doanh thu, chi phí và tồn kho.</p><p><b>AI có thể làm:</b> Phân tích bán hàng, dự báo nhu cầu nguyên liệu, gợi ý nhập hàng và tư vấn menu.</p><div class="challenge"><b>Thử thách:</b> Xử lý hủy đơn, hoàn tiền mô phỏng, tồn kho âm và doanh thu lệch đơn hàng.</div><div class="deliver"><strong>Bàn giao:</strong> Hệ thống quản lý quán, dashboard và AI phân tích dữ liệu.</div></article>
+      <article class="project" data-category="tech"><div class="project-top"><span class="num">ĐỀ TÀI 08</span><span class="emoji">🐞</span></div><span class="tag">AI hỗ trợ kiểm thử</span><h3>Bug Hunter</h3><p class="subtitle">Săn lỗi trước khi khách hàng săn mình</p><p class="story"><b>Bối cảnh:</b> Demo chạy ngon, đến lúc khách hàng bấm thanh toán thì cả hệ thống xin nghỉ phép.</p><p><b>Nhiệm vụ:</b> Tiếp nhận lỗi, phân loại mức độ, giao người xử lý, theo dõi sửa và kiểm thử lại.</p><p><b>AI có thể làm:</b> Gợi ý nguyên nhân, đề xuất test case và phát hiện báo lỗi trùng.</p><div class="challenge"><b>Thử thách:</b> AI có thể sai — người kiểm thử phải xác nhận trước khi đóng lỗi.</div><div class="deliver"><strong>Bàn giao:</strong> Bug tracker, dashboard chất lượng, bộ test case và trợ lý AI.</div></article>
+      <article class="project" data-category="campus"><div class="project-top"><span class="num">ĐỀ TÀI 09</span><span class="emoji">🏠</span></div><span class="tag">AI tối ưu lịch & chi phí</span><h3>Ký Túc Xá Sinh Tồn</h3><p class="subtitle">Phòng trọ không còn drama</p><p class="story"><b>Bối cảnh:</b> Tranh nhau máy giặt, quên đóng tiền điện, lịch trực nhật chỉ tồn tại trong trí nhớ của một người.</p><p><b>Nhiệm vụ:</b> Quản lý phòng ở, lịch dùng thiết bị, chia chi phí, lịch trực nhật và báo sự cố.</p><p><b>AI có thể làm:</b> Đề xuất lịch dùng thiết bị công bằng, chia chi phí theo quy tắc nhóm và nhắc lịch.</p><div class="challenge"><b>Thử thách:</b> Xử lý lịch trùng, thành viên rời nhóm giữa tháng và tranh chấp khoản chi.</div><div class="deliver"><strong>Bàn giao:</strong> Ứng dụng sinh hoạt chung, lịch đặt thiết bị, sổ thu chi và chatbot.</div></article>
+      <article class="project" data-category="tech"><div class="project-top"><span class="num">ĐỀ TÀI 10</span><span class="emoji">🎟️</span></div><span class="tag">AI hỗ trợ tổ chức sự kiện</span><h3>Cứu Event</h3><p class="subtitle">Sự kiện đông hơn dự kiến</p><p class="story"><b>Bối cảnh:</b> Dự kiến 50 người nhưng 150 người đăng ký; quà và chỗ ngồi thiếu, check-in rối như dây tai nghe.</p><p><b>Nhiệm vụ:</b> Tạo sự kiện, đăng ký, giới hạn sức chứa, QR check-in, phân công nhân sự và khảo sát.</p><p><b>AI có thể làm:</b> Dự báo số người tham dự, tổng hợp phản hồi và gợi ý kế hoạch tổ chức.</p><div class="challenge"><b>Thử thách:</b> Chống check-in trùng, xử lý hủy đăng ký, danh sách chờ và báo cáo chính xác.</div><div class="deliver"><strong>Bàn giao:</strong> Website sự kiện, giao diện check-in, quản lý nhân sự và báo cáo AI.</div></article>
+    </div>
+    <p class="no-results" id="noResults">Không có đề tài trong nhóm này.</p>
+  </div>
+</section>
+
+<section class="section" id="goi-y">
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">02 / Gợi ý lựa chọn</div><h2>Ba đề tài nên cân nhắc đầu tiên</h2></div><p>Chọn đề tài theo năng lực muốn đánh giá — không nhất thiết chọn đề tài có nhiều tính năng nhất.</p></div>
+    <div class="split">
+      <article class="feature"><div class="eyebrow">Làm việc nhóm</div><h3><span class="rank">01</span>Teamwork SOS</h3><p>Phù hợp để đánh giá phân tích yêu cầu, chia việc, quản lý tiến độ và tích hợp module.</p><ul><li>Phân công và theo dõi đóng góp</li><li>Git, phối hợp nhóm</li><li>Giải thích tiến độ và trách nhiệm cá nhân</li></ul></article>
+      <article class="feature"><div class="eyebrow">Xây dựng hệ thống</div><h3><span class="rank">02</span>Chủ Quán Bất Ổn</h3><p>Phù hợp làm dự án môn học với nghiệp vụ đầy đủ và dữ liệu có thể kiểm thử.</p><ul><li>CRUD, database và API</li><li>Tồn kho, doanh thu và phân quyền</li><li>Dashboard và AI phân tích</li></ul></article>
+      <article class="feature"><div class="eyebrow">Tư duy kiểm thử</div><h3><span class="rank">03</span>Bug Hunter</h3><p>Phù hợp để đánh giá logic, chất lượng phần mềm và khả năng xử lý thay đổi.</p><ul><li>Test case và quy trình xử lý lỗi</li><li>Phát hiện báo lỗi trùng</li><li>Xác minh kết quả AI gợi ý</li></ul></article>
+      <article class="feature"><div class="eyebrow">Nguyên tắc chung</div><h3>Sản phẩm tối thiểu nhưng chạy thật</h3><p>Không cần hoàn thành hệ thống quá lớn. Ưu tiên một luồng nghiệp vụ hoàn chỉnh, dữ liệu hợp lý và nhóm giải thích được quyết định của mình.</p><ul><li>Demo được luồng chính</li><li>Kiểm thử dữ liệu bất thường</li><li>Có phương án khi AI sai</li></ul></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="lich-thi">
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">03 / Kịch bản tổ chức</div><h2>Hackathon 8 giờ</h2></div><p>Lịch mẫu có thể rút gọn hoặc chia thành hai buổi tùy điều kiện phòng máy.</p></div>
+    <div class="timeline">
+      <article class="timeitem"><div class="time">00:00–00:30 · 30 PHÚT</div><h3>01. Nhận đề & phân tích</h3><p>Xác định người dùng, vấn đề, chức năng cốt lõi và tiêu chí hoàn thành.</p></article>
+      <article class="timeitem"><div class="time">00:30–01:30 · 60 PHÚT</div><h3>02. Thiết kế</h3><p>Phác thảo giao diện, ERD cơ sở dữ liệu, API và phân chia nhiệm vụ.</p></article>
+      <article class="timeitem"><div class="time">01:30–04:30 · 3 GIỜ</div><h3>03. Xây dựng</h3><p>Lập trình chức năng chính, kết nối database và tích hợp AI.</p></article>
+      <article class="timeitem"><div class="time">04:30–06:00 · 90 PHÚT</div><h3>04. Tích hợp & kiểm thử</h3><p>Chạy luồng nghiệp vụ, sửa lỗi, kiểm tra dữ liệu và quyền truy cập.</p></article>
+      <article class="timeitem"><div class="time">06:00–07:00 · 60 PHÚT</div><h3>05. Thử thách bất ngờ</h3><p>Ban tổ chức bổ sung yêu cầu hoặc dữ liệu lỗi để kiểm tra khả năng thích ứng.</p></article>
+      <article class="timeitem"><div class="time">07:00–08:00 · 60 PHÚT</div><h3>06. Demo & bảo vệ</h3><p>Trình diễn sản phẩm, trả lời câu hỏi và sửa trực tiếp một lỗi nhỏ.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="cham-diem">
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">04 / Cách chấm điểm</div><h2>Thang điểm 100</h2></div><p>Chấm sản phẩm chạy được, cách nghĩ và khả năng giải thích — không chỉ chấm giao diện đẹp.</p></div>
+    <table class="rubric"><thead><tr><th>Tiêu chí</th><th>Điểm</th></tr></thead><tbody>
+      <tr><td>Chức năng chạy được, nghiệp vụ chính xác</td><td>25</td></tr>
+      <tr><td>Phân tích yêu cầu, tư duy giải quyết vấn đề</td><td>15</td></tr>
+      <tr><td>Thiết kế kiến trúc và cơ sở dữ liệu</td><td>15</td></tr>
+      <tr><td>Ứng dụng AI có giá trị thực tế, có kiểm chứng</td><td>15</td></tr>
+      <tr><td>Kiểm thử, bảo mật và xử lý tình huống</td><td>10</td></tr>
+      <tr><td>Làm việc nhóm, phân công và tích hợp</td><td>10</td></tr>
+      <tr><td>Demo, thuyết trình và bảo vệ quyết định</td><td>10</td></tr>
+      <tr><td>TỔNG CỘNG</td><td>100</td></tr>
+    </tbody></table>
+    <div class="note"><b>AI có trách nhiệm:</b> Nhóm cần nêu rõ AI nhận đầu vào gì, tạo ra kết quả gì và kiểm chứng ra sao. Khi AI sai, phải có cách để người dùng xác nhận hoặc phương án dự phòng. Không đưa mật khẩu hay dữ liệu cá nhân/nhạy cảm lên dịch vụ AI công cộng.</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">05 / Tổ chức đội nhóm</div><h2>Mỗi người có vai trò, cả nhóm chịu trách nhiệm</h2></div><p>Gợi ý cho nhóm 4–5 sinh viên. Có thể kiêm nhiệm vai trò, nhưng không nên để một người làm toàn bộ sản phẩm.</p></div>
+    <div class="split">
+      <article class="feature"><h3>Team Leader / BA</h3><p>Làm rõ yêu cầu, chia việc, theo dõi tiến độ và kiểm soát phạm vi.</p></article>
+      <article class="feature"><h3>Backend / API</h3><p>Xử lý nghiệp vụ, đăng nhập, phân quyền, API và kiểm tra dữ liệu.</p></article>
+      <article class="feature"><h3>Database / Test</h3><p>Thiết kế ERD, chuẩn bị dữ liệu mẫu, viết test case và kiểm tra lỗi nghiệp vụ.</p></article>
+      <article class="feature"><h3>Frontend / AI & Integration</h3><p>Xây giao diện, kết nối API, tích hợp AI, kiểm chứng kết quả và phối hợp tích hợp toàn hệ thống.</p></article>
+    </div>
+    <div class="note"><b>Luật chơi gợi ý:</b> Mỗi thành viên có module cụ thể; dùng Git và bảng công việc để lưu dấu vết; ban giám khảo có thể hỏi ngẫu nhiên bất kỳ thành viên; nhóm cần khai báo công cụ AI đã dùng và cách kiểm tra kết quả.</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">06 / Công nghệ gợi ý</div><h2>Ưu tiên công nghệ quen thuộc</h2></div><p>Không bắt buộc dùng stack phức tạp nếu điều đó làm giảm chất lượng sản phẩm trong thời gian thi.</p></div>
+    <div class="split">
+      <article class="feature"><h3>Giao diện</h3><p>HTML · CSS · Bootstrap · JavaScript</p></article>
+      <article class="feature"><h3>Backend</h3><p>PHP MVC hoặc Python FastAPI</p></article>
+      <article class="feature"><h3>Cơ sở dữ liệu</h3><p>MySQL · ERD · khóa chính / khóa ngoại</p></article>
+      <article class="feature"><h3>AI & làm việc nhóm</h3><p>Gemini API hoặc OpenAI API; Git, GitHub, README và bảng nhiệm vụ.</p></article>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer"><div class="wrap"><div class="eyebrow">Think · Build · Test · Present</div><h2 style="color:var(--text);font-size:clamp(1.8rem,4vw,3rem);line-height:1.15;max-width:760px">Bạn không cần tạo ra ứng dụng hoàn hảo. Bạn cần chứng minh mình biết cách cải tiến nó.</h2><p>Ý tưởng tốt + đội nhóm tốt + kiểm chứng tốt = sản phẩm có giá trị.</p><p class="small">Tài liệu giới thiệu Hackathon dành cho sinh viên Cao đẳng Công nghệ thông tin.</p></div></footer>
+<button class="backtop" aria-label="Lên đầu trang" title="Lên đầu trang" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<script>
+(function(){
+  const buttons=[...document.querySelectorAll('.filter')];
+  const cards=[...document.querySelectorAll('.project')];
+  const empty=document.getElementById('noResults');
+  buttons.forEach(button=>button.addEventListener('click',()=>{
+    const selected=button.dataset.filter;
+    buttons.forEach(item=>item.classList.toggle('active',item===button));
+    let shown=0;
+    cards.forEach(card=>{
+      const visible=selected==='all'||card.dataset.category===selected;
+      card.hidden=!visible;
+      if(visible) shown++;
+    });
+    empty.style.display=shown?'none':'block';
+  }));
+})();
+</script>
+</body>
+</html>
